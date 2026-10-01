@@ -439,6 +439,11 @@ img {
   border-radius: 50%;
 }
 
+.staff-card img,
+.office-profile img {
+  box-shadow: 0 5px 4px rgba(43, 57, 64, .7);
+}
+
 .staff-card h3 {
   text-align: center;
   font-size: 25px;
@@ -930,48 +935,45 @@ img {
 
 /* About */
 .about-page-main { padding-bottom: 150px; }
-.about-lead-image {
+.about-hero {
   position: relative;
-  width: 1208px;
-  margin: 24px auto 0;
+  background: #fff;
+  border-radius: 48px;
   overflow: hidden;
 }
-.about-lead-image img {
-  width: 100%;
-  border-radius: 0;
-  box-shadow: none;
+.about-hero img {
+  height: 365px;
+  object-fit: cover;
+  opacity: .82;
 }
-
-/* Figmaの最新指定: Glass / backdrop blur ではなく Layer Blur。
-   ぼかす対象は背景の後ろではなく、このレイヤー自身。 */
-.about-layer-blur {
+.about-hero-title {
   position: absolute;
   z-index: 1;
-  left: 128px;
-  right: 128px;
-  top: 418px;
-  height: 222px;
-  border-radius: 30px;
-  background: rgba(48, 55, 58, .82);
-  filter: blur(10px);
-  transform: translateZ(0);
-  pointer-events: none;
-}
-
-.about-lead-copy {
-  position: absolute;
-  z-index: 2;
-  left: 158px;
-  right: 158px;
-  top: 432px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
   color: #fff;
-  font-size: 24px;
-  line-height: 1.68;
+  font-size: 80px;
+  line-height: 1.2;
   font-weight: 700;
-  letter-spacing: .015em;
-  text-shadow: 0 1px 2px rgba(20, 45, 51, .28);
+  white-space: nowrap;
+  text-shadow: 0 3px 4px rgba(20, 45, 51, .5);
 }
+.about-hero-title::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -12px -24px;
+  border-radius: 48px;
+  background: rgba(48, 55, 58, .28);
+  filter: blur(10px);
+  pointer-events: none;
+}
+.about-intro {
+  margin: 24px auto 0;
+}
+
 .about-feature-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
