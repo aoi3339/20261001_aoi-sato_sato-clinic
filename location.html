@@ -26,23 +26,23 @@
       <h1 id="location-page-title" class="sr-only">診療時間・所在地</h1>
       <img src="./assets/hero-location.png" alt="診療時間・所在地">
     </section>
-    <nav class="breadcrumb" aria-label="パンくずリスト"><a href="./index.html">ホーム</a><span>＞</span><span>所在地</span></nav>
+    <a class="back-top" href="./index.html">← TOPへ戻る</a>
     <p class="page-intro">佐藤医院では、患者様のご都合に合わせた診療を提供できるよう、柔軟な診療時間を設けております。以下をご確認のうえ、ご来院の際にご利用ください。</p>
 
-    <section class="content-section">
+    <section class="content-section location-schedule">
       <h2 class="framed-title">診療時間</h2>
-      <table class="location-table">
-        <thead><tr><th>診療時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th></tr></thead>
+      <table class="schedule-table">
+        <thead><tr><th scope="col">診療時間</th><th scope="col">月</th><th scope="col">火</th><th scope="col">水</th><th scope="col">木</th><th scope="col">金</th><th scope="col">土</th><th scope="col">日</th></tr></thead>
         <tbody>
-          <tr><th>午前 9:00〜12:00</th><td>●</td><td>●</td><td>●</td><td class="holiday">／</td><td>●</td><td>●</td><td class="holiday">／</td></tr>
-          <tr><th>午後 13:00〜18:00</th><td>●</td><td>●</td><td>●</td><td class="holiday">／</td><td>●</td><td class="holiday">／</td><td class="holiday">／</td></tr>
+          <tr><th scope="row">9:00〜12:00</th><td>○</td><td>○</td><td>○</td><td class="closed">休</td><td>○</td><td>○</td><td class="closed">休</td></tr>
+          <tr><th scope="row">13:00〜18:00</th><td>○</td><td>○</td><td>○</td><td class="closed">休</td><td>○</td><td class="closed">休</td><td class="closed">休</td></tr>
         </tbody>
       </table>
-      <div class="location-notes">
-        <p>●＝診療　／＝休診</p>
-        <p>受付時間：午前 8:00〜11:00　／　午後 12:00〜17:00</p>
+      <div class="schedule-detail">
+        <p class="legend"><strong>○：診療</strong><strong class="closed-text">休：休診</strong></p>
+        <p>受付時間：午前&nbsp; 8:00〜11:00　／　午後&nbsp; 12:00〜17:00</p>
         <p>休診日：木曜・土曜午後・日曜</p>
-        <p>※祝祭日も診療を行っておりますが、休診日もございますので、事前にご確認ください。</p>
+        <p>祝祭日も診療を行っておりますが、休診日もございますので、事前にご確認ください。</p>
       </div>
     </section>
 
