@@ -42,7 +42,7 @@
 
   Promise.all([...slideshow.querySelectorAll('.hero-slide')].map(async slide => {
     try {
-      await slide.decode();
+      await slide.querySelector('img').decode();
       return slide;
     } catch {
       return null;
@@ -58,6 +58,11 @@
     slides[0].removeAttribute('aria-hidden');
     button.hidden = slides.length < 2;
     updateButton();
-    schedule();
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        slideshow.classList.add('is-ready');
+        schedule();
+      });
+    });
   });
 })();
