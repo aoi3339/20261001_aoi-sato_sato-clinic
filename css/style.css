@@ -747,6 +747,26 @@ img {
   box-shadow: none;
 }
 
+.page-news .sub-hero,
+.page-news-detail .sub-hero {
+  position: relative;
+}
+
+.news-hero-title {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  margin: 0;
+  color: #fff;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 700;
+  white-space: nowrap;
+  text-shadow: 0 3px 4px rgba(20, 45, 51, .5);
+}
+
 .back-top {
   display: inline-block;
   margin: 34px 0 66px 38px;
