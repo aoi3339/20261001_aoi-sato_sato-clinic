@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 160px;
 }
 
 body {
@@ -58,6 +59,9 @@ img {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   padding: 26px 0 18px;
   background: var(--frame-bg);
   overflow: visible;
@@ -990,6 +994,9 @@ img {
   border-radius: 18px;
   box-shadow: none;
 }
+.about-feature-card .about-family-image {
+  object-position: right center;
+}
 .about-feature-card p {
   margin: 18px 0 0;
   font-size: 15.5px;
@@ -1060,6 +1067,7 @@ img {
 }
 .faq-item span {
   color: var(--accent);
+  font-size: 18px;
   font-weight: 800;
 }
 .faq-page-main .page-intro,
