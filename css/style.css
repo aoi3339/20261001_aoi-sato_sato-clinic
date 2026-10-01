@@ -779,14 +779,14 @@ img {
   text-align: center;
 }
 
-.sub-news-row a {
+.sub-news-row > a {
   justify-self: center;
   color: var(--text);
   font-size: 14px;
   font-weight: 800;
 }
 
-.sub-news-row a::before,
+.sub-news-row > a::before,
 .sub-news-more::before {
   content: "";
   display: inline-block;
@@ -911,7 +911,7 @@ img {
 
 .back-news {
   color: var(--accent);
-  font-size: 22px;
+  font-size: 28px;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -966,7 +966,7 @@ img {
   width: max-content;
   margin: 72px auto 0;
   color: var(--text);
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 600;
 }
 
