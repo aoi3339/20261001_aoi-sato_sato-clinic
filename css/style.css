@@ -1062,12 +1062,18 @@ img {
   color: var(--accent);
   font-weight: 800;
 }
+.faq-page-main .page-intro,
+.faq-closing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 27px 34px 21px;
+  background: rgba(90,204,229,.08);
+  border-radius: 18px;
+}
 .faq-closing {
   width: 840px;
   margin: 86px auto 0;
-  padding: 24px 34px;
-  background: rgba(90,204,229,.08);
-  border-radius: 18px;
   font-size: 18px;
   line-height: 1.8;
   text-align: center;
