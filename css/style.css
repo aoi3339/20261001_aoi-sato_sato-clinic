@@ -540,7 +540,8 @@ img {
   margin-bottom: 58px;
 }
 
-.subjects p {
+.subjects p,
+.subjects-list p {
   margin: 25px 0;
   font-size: 31px;
   line-height: 1.55;
@@ -906,7 +907,6 @@ img {
 .plain-card,
 .policy-card,
 .faq-card,
-.subjects-card,
 .contact-list {
   background: rgba(255,255,255,.9);
   border: 1px solid rgba(90,204,229,.18);
@@ -1079,21 +1079,8 @@ img {
 .location-schedule .schedule-detail {
   text-align: center;
 }
-.subjects-card {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 54px;
-  padding: 30px 70px;
-}
-.subjects-card > div:first-child {
-  padding-right: 54px;
-  border-right: 1px solid rgba(36,92,104,.18);
-}
-.subjects-card p {
-  margin: 10px 0;
-  font-size: 20px;
-  line-height: 1.7;
-  font-weight: 700;
+.subjects-list {
+  text-align: center;
 }
 .center-note {
   margin: 28px 0 0;
