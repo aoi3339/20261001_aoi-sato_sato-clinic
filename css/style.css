@@ -183,8 +183,11 @@ img {
   pointer-events: none;
 }
 
-.hero-slideshow.is-ready .hero-slide.is-active .hero-slide-caption {
+.hero-slideshow.is-ready .hero-slide-caption {
   opacity: 1;
+}
+
+.hero-slideshow.is-ready .hero-slide.is-active .hero-slide-caption {
   transform: translateY(0);
 }
 
