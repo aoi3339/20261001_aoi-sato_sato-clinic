@@ -255,9 +255,12 @@ img {
   font-weight: 600;
 }
 
-.section-title {
+.section-title,
+.framed-title {
   position: relative;
-  margin: 0 0 76px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 76px;
   color: var(--accent);
   font-size: 36px;
   line-height: 1.25;
@@ -266,21 +269,25 @@ img {
 }
 
 .section-title::before,
-.section-title::after {
+.section-title::after,
+.framed-title::before,
+.framed-title::after {
   content: "";
   display: block;
-  width: 138px;
+  width: 100%;
   height: 2px;
   margin-inline: auto;
   background: var(--accent);
   opacity: .78;
 }
 
-.section-title::before {
+.section-title::before,
+.framed-title::before {
   margin-bottom: 20px;
 }
 
-.section-title::after {
+.section-title::after,
+.framed-title::after {
   margin-top: 20px;
 }
 
@@ -860,25 +867,9 @@ img {
    Final multipage additions
    ========================================================= */
 
-/* Original-style section heading: text between two horizontal lines */
+/* Subpage headings share the index page's lines above and below the text. */
 .framed-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 34px;
-  margin: 0 0 46px;
-  color: var(--text);
-  font-size: 34px;
-  line-height: 1.3;
-  font-weight: 800;
-  text-align: center;
-}
-.framed-title::before,
-.framed-title::after {
-  content: "";
-  width: 250px;
-  height: 2px;
-  background: var(--accent);
+  margin-bottom: 46px;
 }
 
 .custom-hero img {
