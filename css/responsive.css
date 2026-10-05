@@ -104,6 +104,15 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .menu-open .menu-toggle { background: transparent; color: var(--accent); }
   .menu-open .faq-float { display: none; }
   .hero-slideshow { border-radius: 24px; }
+  .hero-slideshow .hero-slide img { border-radius: 0; }
+  .hero-slideshow .hero-slide--courtyard img,
+  .hero-slideshow .hero-slide--waiting img {
+    inset: -2%; width: 104%; height: 104%; max-width: none; object-position: center;
+  }
+  .hero-slideshow .hero-slide--digestive img {
+    inset: -6%; width: 112%; height: 112%; object-position: center top;
+  }
+  .hero-slideshow .hero-slide--family img { object-position: right center; }
   .hero-slide--courtyard .hero-slide-caption { left: 5%; right: 5%; font-size: clamp(24px, 4.8vw, 36px); }
   .hero-slide--waiting .hero-slide-caption { top: 15%; font-size: calc(clamp(15px, 3.6vw, 27px) + 3px); white-space: normal; text-wrap: balance; }
   .hero-slide--digestive .hero-slide-caption { font-size: clamp(22px, 4.3vw, 32px); }
@@ -233,12 +242,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .brand img { width: 136px; }
   .menu-toggle { width: 48px; min-height: 48px; }
   .mobile-nav-links a { min-height: 64px; font-size: 26px; padding: 14px 4px; }
-  .hero-slideshow { aspect-ratio: 1.65; border-radius: 20px; }
+  .hero-slideshow { border-radius: 20px; }
   .hero-slide--waiting .hero-slide-caption { font-size: calc(clamp(14px, 4vw, 19px) + 3px); }
   .hero-slide--digestive .hero-slide-caption { font-size: clamp(18px, 4.8vw, 23px); }
   .hero-slide--courtyard .hero-slide-caption, .hero-slide--family .hero-slide-caption { font-size: clamp(22px, 6vw, 28px); }
   .hero-slideshow .hero-slide--digestive img { inset: -3%; width: 106%; height: 106%; }
-  .hero-slideshow .hero-slide--family img { object-position: 75% center; }
   .schedule-table { font-size: clamp(12px, 3.3vw, 15px); }
   .schedule-table th, .schedule-table td { height: 44px; }
   .schedule-table thead th:first-child, .schedule-table tbody th { width: 30%; }
