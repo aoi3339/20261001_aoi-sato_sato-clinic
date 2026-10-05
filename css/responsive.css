@@ -27,6 +27,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
 
 @media (max-width: 1116px) {
   .location-page-main > .content-section + .content-section { margin-top: 96px; }
+  .page-location .contact-list p { grid-template-columns: 4.25em 1em minmax(0, 1fr); column-gap: .5em; }
+  .page-location .contact-list p > span { white-space: nowrap; }
+  .page-location .contact-list b { text-align: center; }
   .global-nav { gap: clamp(10px, 2vw, 28px); font-size: clamp(14px, 1.8vw, 20px); }
   .brand img { width: clamp(140px, 18vw, 205.2px); }
   .news-row { grid-template-columns: 140px minmax(0, 1fr) 130px; }
@@ -106,7 +109,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .schedule-detail { font-size: 16px; margin-top: 20px; }
   .schedule-detail .legend { font-size: 18px; gap: 28px; }
   .news, .greeting, .services, .about, .staff, .access, .contact, .subjects { padding-top: 64px; }
-  .subjects { padding-bottom: 72px; }
+  .access { padding-bottom: 72px; }
   .pill-title { font-size: 24px; padding: 18px 24px; margin-bottom: 24px; }
   .news-list, .sub-news-list { width: 100%; }
   .news-row, .sub-news-row { grid-template-columns: 110px minmax(0, 1fr); gap: 8px 14px; padding: 18px 0; min-height: 0; }
@@ -198,7 +201,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .location-copy { padding: 24px; font-size: 16px; }
   .center-note { font-size: 16px; }
   .contact-list { width: 100%; padding: 24px; }
-  .contact-list p { grid-template-columns: 90px 12px minmax(0, 1fr); font-size: 16px; }
+  .contact-list p { font-size: 16px; }
   .archive-main { padding: 28px 0 72px; }
   .archive-heading { margin: 0; font-size: 30px; }
   .archive-content { margin: 28px 0 0; }
@@ -256,7 +259,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .policy-table td:nth-child(2) { width: auto; }
   .policy-table td:last-child { grid-column: 2; }
   .contact-list { padding: 20px 16px; }
-  .contact-list p { grid-template-columns: 80px 10px minmax(0, 1fr); gap: 0; }
   .page-top-float { right: 12px; bottom: calc(72px + env(safe-area-inset-bottom, 0px)); width: 52px; height: 52px; }
   .faq-float { right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); padding: 8px 12px; font-size: 14px; gap: 8px; }
   .faq-float-icon { flex-basis: 28px; width: 28px; height: 28px; font-size: 20px; }
