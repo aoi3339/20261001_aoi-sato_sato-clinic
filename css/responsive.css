@@ -54,6 +54,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
 }
 
 @media (max-width: 768px) {
+  .services-intro { margin-bottom: 32px; font-size: 16px; text-align: left; }
   .about-staff { margin-top: 80px; }
   .about-staff-grid { grid-template-columns: 1fr; gap: 24px; }
   :root { --subpage-title-size: clamp(30px, 6vw, 44px); --mobile-header-height: 76px; }
