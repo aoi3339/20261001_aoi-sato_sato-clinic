@@ -78,7 +78,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .nav-ready .global-nav.is-open {
     display: block; position: fixed; inset: var(--mobile-header-height) 0 0; z-index: 101;
     padding: 12px 24px max(32px, env(safe-area-inset-bottom)); overflow-y: auto;
-    overscroll-behavior: contain; background: var(--accent); color: #fff; text-shadow: none;
+    overscroll-behavior: contain; background: color-mix(in srgb, var(--accent) 50%, #fff); color: #fff; text-shadow: none;
   }
   .nav-ready .global-nav > a { display: none; }
   .global-nav.is-open .mobile-nav-links { display: flex; flex-direction: column; }
@@ -90,8 +90,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .mobile-nav-links a::after { content: "›"; font-size: 40px; font-weight: 400; line-height: 1; }
   .mobile-nav-links a:hover, .mobile-nav-links a:focus-visible { color: #fff; background: rgba(255,255,255,.15); }
   body.menu-open { position: fixed; width: 100%; overflow: hidden; }
-  .menu-open .site-header { background: var(--accent); }
-  .menu-open .menu-toggle { background: rgba(36,92,104,.25); }
+  .menu-open .site-header { background: color-mix(in srgb, var(--accent) 5%, #fff); }
+  .menu-open .menu-toggle { background: transparent; color: var(--accent); }
   .menu-open .faq-float { display: none; }
   .hero-slideshow { border-radius: 24px; }
   .hero-slide--courtyard .hero-slide-caption { left: 5%; right: 5%; font-size: clamp(24px, 4.8vw, 36px); }
