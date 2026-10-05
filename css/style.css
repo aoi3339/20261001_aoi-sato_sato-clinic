@@ -1433,3 +1433,80 @@ img {
     transition: none;
   }
 }
+
+
+/* Crop the photo and draw consistent rounded corners independently of the text. */
+.about-banner {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 1208 / 732;
+  overflow: hidden;
+  border-radius: 43.2px;
+  color: #fff;
+  background: var(--frame-bg);
+}
+.about .about-banner > img {
+  position: absolute;
+  inset: -2%;
+  width: 104%;
+  max-width: none;
+  height: 104%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+.about-banner-title {
+  position: absolute;
+  top: 7.5%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  font-size: 43.2px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 2.7px 3.6px rgba(20, 45, 51, .35);
+}
+.about-banner-description {
+  position: absolute;
+  bottom: 13.5%;
+  left: 13.5%;
+  right: 13.5%;
+  margin: 0;
+  font-size: 21.6px;
+  line-height: 1.7;
+  font-weight: 700;
+  text-shadow: 0 1.8px 3.6px rgba(20, 45, 51, .35);
+}
+.about-banner-description::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -14.4px -21.6px;
+  border-radius: 21.6px;
+  background: rgba(48, 55, 58, .16);
+  filter: blur(14.4px);
+  pointer-events: none;
+}
+.about-banner-more {
+  position: absolute;
+  bottom: 4.5%;
+  left: 0;
+  right: 0;
+  font-size: 25.2px;
+  line-height: 1.3;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 1.8px 3.6px rgba(20, 45, 51, .35);
+}
+.about-banner-more::before {
+  content: "";
+  display: inline-block;
+  width: 16.2px;
+  height: 16.2px;
+  margin-right: 5.4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.about-banner:focus-visible { outline: 2.7px solid var(--text); outline-offset: 5.4px; }
+.about-banner:hover .about-banner-more { text-decoration: underline; }
