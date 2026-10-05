@@ -889,9 +889,10 @@ img {
   z-index: 10;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 22px;
   min-width: 352px;
-  padding: 14px 34px 14px 22px;
+  padding: 14px 28px;
   border-radius: 54px;
   background: var(--accent);
   color: #fff;
@@ -1402,4 +1403,32 @@ img {
 .archive-content a:focus-visible {
   outline: 3px solid var(--text);
   outline-offset: 5px;
+}
+
+.page-news-archive .news-detail-list-link {
+  font-size: 18px;
+}
+
+
+/* Greeting and service images reveal once as they enter the viewport. */
+.image-reveal {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity .7s ease-out, transform .7s cubic-bezier(.16, 1, .3, 1);
+}
+.image-reveal.image-reveal-pending {
+  opacity: 0;
+  transform: translateY(32px);
+}
+.image-reveal.image-reveal-pending.image-reveal-from-left {
+  transform: translateX(-32px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .image-reveal,
+  .image-reveal.image-reveal-pending,
+  .image-reveal.image-reveal-pending.image-reveal-from-left {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
