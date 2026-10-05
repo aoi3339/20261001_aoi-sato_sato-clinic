@@ -1275,6 +1275,65 @@ img {
 .about-future { margin-bottom: 0; }
 .future-card { padding: 34.2px 41.4px; }
 
+.about-staff-lead {
+  max-width: 820px;
+  margin: 0 auto 36px;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.about-staff-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.about-staff-card {
+  padding: 32px;
+  border: 1px solid rgba(90, 204, 229, .18);
+  border-top: 3px solid var(--accent);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 3.6px 10.8px rgba(36, 92, 104, .09);
+}
+
+.about-staff-heading {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.about-staff-heading img {
+  flex: 0 0 128px;
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-staff-heading h3 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+.about-staff-role {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.about-staff-card p {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.about-staff-card p:last-child { margin-bottom: 0; }
+
 /* FAQ */
 .faq-page-main { padding-bottom: 126px; }
 .faq-section { margin-top: 73.8px; }

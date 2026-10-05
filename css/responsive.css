@@ -26,6 +26,10 @@ main *, .header-inner > * { min-width: 0; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-offset: 4px; }
 
 @media (max-width: 1116px) {
+  .about-staff-card { padding: 24px; }
+  .about-staff-heading { gap: 20px; }
+  .about-staff-heading img { flex-basis: 104px; width: 104px; height: 104px; }
+  .about-staff-heading h3 { font-size: 24px; }
   .location-page-main > .content-section + .content-section { margin-top: 96px; }
   .page-location .contact-list p { grid-template-columns: 4.25em 1em minmax(0, 1fr); column-gap: .5em; }
   .page-location .contact-list p > span { white-space: nowrap; }
@@ -50,6 +54,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
 }
 
 @media (max-width: 768px) {
+  .about-staff { margin-top: 80px; }
+  .about-staff-grid { grid-template-columns: 1fr; gap: 24px; }
   :root { --subpage-title-size: clamp(30px, 6vw, 44px); --mobile-header-height: 76px; }
   html { scroll-padding-top: calc(var(--mobile-header-height) + 20px); }
   body { font-size: 16px; }
@@ -218,6 +224,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
 }
 
 @media (max-width: 480px) {
+  .about-staff-card { padding: 24px 20px; }
+  .about-staff-heading { flex-direction: column; gap: 16px; text-align: center; }
+  .about-staff-lead { text-align: left; }
   :root { --mobile-header-height: 68px; --subpage-title-size: 30px; }
   .section-shell, .header-inner { width: calc(100% - 32px); }
   .brand img { width: 136px; }
