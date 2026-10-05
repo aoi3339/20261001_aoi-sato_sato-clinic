@@ -1481,6 +1481,7 @@ img {
 }
 .about-banner-description {
   position: absolute;
+  z-index: 1;
   bottom: 13.5%;
   left: 13.5%;
   right: 13.5%;
