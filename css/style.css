@@ -290,6 +290,15 @@ img {
   font-weight: 800;
 }
 
+.schedule-table tbody th {
+  line-height: 1.4;
+}
+
+.schedule-table .schedule-time {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .schedule-detail {
   margin-top: 25.2px;
   font-size: 16.2px;

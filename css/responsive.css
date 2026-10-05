@@ -241,7 +241,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .hero-slideshow .hero-slide--family img { object-position: 75% center; }
   .schedule-table { font-size: clamp(12px, 3.3vw, 15px); }
   .schedule-table th, .schedule-table td { height: 44px; }
-  .schedule-table thead th:first-child, .schedule-table tbody th { width: 26%; }
+  .schedule-table thead th:first-child, .schedule-table tbody th { width: 30%; }
   .schedule-table tbody th { line-height: 1.4; }
   .schedule-detail { text-align: left; }
   .schedule-detail .legend { justify-content: center; }
