@@ -26,6 +26,7 @@ main *, .header-inner > * { min-width: 0; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-offset: 4px; }
 
 @media (max-width: 1116px) {
+  .location-page-main > .content-section + .content-section { margin-top: 96px; }
   .global-nav { gap: clamp(10px, 2vw, 28px); font-size: clamp(14px, 1.8vw, 20px); }
   .brand img { width: clamp(140px, 18vw, 205.2px); }
   .news-row { grid-template-columns: 140px minmax(0, 1fr) 130px; }
