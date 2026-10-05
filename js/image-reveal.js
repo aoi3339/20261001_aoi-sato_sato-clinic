@@ -1,6 +1,6 @@
 (() => {
   const images = [...document.querySelectorAll(
-    '.greeting-grid > img, .service-card > img, .service-detail-card > img, .about-banner, .contact-box'
+    '.greeting-grid > .image-crop, .service-card > .image-crop, .service-detail-card > .image-crop, .about-banner, .contact-box, .page-about .plain-card, .page-about .about-feature-card, .page-about .policy-card'
   )];
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (!images.length || motion.matches || !('IntersectionObserver' in window)) return;
@@ -18,7 +18,7 @@
 
   images.forEach((image) => {
     image.classList.add('image-reveal', 'image-reveal-pending');
-    if (image.matches('.greeting-grid > img')) {
+    if (image.matches('.greeting-grid > .image-crop')) {
       image.classList.add('image-reveal-from-left');
     }
     if (image.matches('.about-banner')) {

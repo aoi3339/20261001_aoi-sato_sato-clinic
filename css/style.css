@@ -10,7 +10,9 @@
   --white: #ffffff;
   --content: 1087.2px;
   --subpage-title-size: 72px;
-  --subpage-title-shadow: 0 2.7px 3.6px rgba(20, 45, 51, .5);
+  --ui-shadow: 0 4.5px 7.2px rgba(43, 57, 64, .32);
+  --text-shadow-soft: 0 2.7px 7.2px rgba(43, 57, 64, .32);
+  --subpage-title-shadow: var(--text-shadow-soft);
 }
 
 * {
@@ -179,7 +181,7 @@ img {
   font-size: 54px;
   line-height: 1.2;
   font-weight: 800;
-  text-shadow: 0 2.7px 5.4px rgba(20,45,51,.65);
+  text-shadow: var(--text-shadow-soft);
   opacity: 0;
   transform: translateY(10.8px);
   transition: opacity 2s ease-in-out, transform 2s ease-in-out;
@@ -321,7 +323,7 @@ img {
   color: #fff;
   background: var(--accent);
   border-radius: 54px;
-  box-shadow: 0 4.5px 7.2px rgba(43, 57, 64, .32);
+  box-shadow: var(--ui-shadow);
   font-size: 27.9px;
   line-height: 1;
   font-weight: 700;
@@ -573,7 +575,7 @@ img {
 
 .staff-card img,
 .office-profile img {
-  box-shadow: 0 4.5px 3.6px rgba(43, 57, 64, .7);
+  box-shadow: var(--ui-shadow);
 }
 
 .staff-card h3 {
@@ -651,7 +653,7 @@ img {
   background: #fff;
   border: 1.8px solid var(--accent);
   border-radius: 40.5px;
-  box-shadow: 0 4.5px 7.2px rgba(43, 57, 64, .32);
+  box-shadow: var(--ui-shadow);
   color: var(--accent);
   text-align: center;
 }
@@ -729,7 +731,7 @@ img {
 }
 
 .global-nav {
-  text-shadow: 0.9px 1.8px 0 rgba(36, 92, 104, .16);
+  text-shadow: 0.9px 1.8px 3.6px rgba(36, 92, 104, .16);
 }
 
 .service-card h3,
@@ -897,7 +899,7 @@ img {
   border-radius: 48.6px;
   background: var(--accent);
   color: #fff;
-  box-shadow: 0 4.5px 7.2px rgba(43, 57, 64, .32);
+  box-shadow: var(--ui-shadow);
   font-size: 25.2px;
   line-height: 1;
   font-weight: 800;
@@ -1283,8 +1285,9 @@ img {
 }
 .location-grid > img {
   width: 585px;
-  height: 450px;
-  object-fit: cover;
+  align-self: start;
+  height: auto;
+  object-fit: contain;
   border-radius: 25.2px;
   box-shadow: none;
 }
@@ -1472,7 +1475,7 @@ img {
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
-  text-shadow: 0 2.7px 3.6px rgba(20, 45, 51, .35);
+  text-shadow: var(--text-shadow-soft);
 }
 .about-banner-description {
   position: absolute;
@@ -1484,7 +1487,7 @@ img {
   font-size: 21.6px;
   line-height: 1.7;
   font-weight: 700;
-  text-shadow: 0 1.8px 3.6px rgba(20, 45, 51, .35);
+  text-shadow: var(--text-shadow-soft);
 }
 .about-banner-description::before {
   content: "";
@@ -1505,7 +1508,7 @@ img {
   line-height: 1.3;
   font-weight: 700;
   text-align: center;
-  text-shadow: 0 1.8px 3.6px rgba(20, 45, 51, .35);
+  text-shadow: var(--text-shadow-soft);
 }
 .about-banner-more::before {
   content: "";
@@ -1518,3 +1521,46 @@ img {
 }
 .about-banner:focus-visible { outline: 2.7px solid var(--text); outline-offset: 5.4px; }
 .about-banner:hover .about-banner-more { text-decoration: underline; }
+
+.about-feature-card .about-exterior-image {
+  object-position: center;
+}
+
+
+/* Mask embedded photo borders without changing the surrounding card layout. */
+.image-crop {
+  position: relative;
+  overflow: hidden;
+  --crop-overhang: 2%;
+}
+.image-crop--greeting {
+  width: 365.4px;
+  aspect-ratio: 406 / 507;
+  border-radius: 39.6px;
+}
+.image-crop--service {
+  width: 455.4px;
+  height: 366.3px;
+  border-radius: 37.8px;
+}
+.image-crop--detail {
+  width: 100%;
+  height: 412.2px;
+  border-radius: 43.2px;
+}
+.image-crop--feature {
+  width: 100%;
+  height: 198px;
+  border-radius: 16.2px;
+}
+.image-crop--vaccine { --crop-overhang: 4%; }
+.image-crop > img {
+  position: absolute;
+  inset: calc(0% - var(--crop-overhang));
+  width: calc(100% + var(--crop-overhang) + var(--crop-overhang));
+  max-width: none;
+  height: calc(100% + var(--crop-overhang) + var(--crop-overhang));
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+}
