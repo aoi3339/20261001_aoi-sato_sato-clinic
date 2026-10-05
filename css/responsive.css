@@ -113,6 +113,14 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .news-row time, .sub-news-row time { padding-left: 0; font-size: 14px; }
   .news-row h3, .sub-news-row h2 { font-size: 18px; text-align: left; }
   .news-row > a, .sub-news-row > a { grid-column: 2; justify-self: end; font-size: 14px; padding: 8px 0; }
+  .news-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "date more" "title more";
+    gap: 4px 14px;
+  }
+  .news-row time { grid-area: date; }
+  .news-row h3 { grid-area: title; }
+  .news-row > a { grid-area: more; align-self: center; white-space: nowrap; }
   .text-link, .sub-news-more { max-width: 100%; font-size: 16px; padding-block: 12px; }
   .section-title, .framed-title { font-size: 28px; margin-bottom: 32px; }
   .section-title::before, .framed-title::before { margin-bottom: 12px; }
@@ -223,8 +231,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .schedule-table tbody th { line-height: 1.4; }
   .schedule-detail { text-align: left; }
   .schedule-detail .legend { justify-content: center; }
-  .news-row, .sub-news-row { grid-template-columns: 1fr; gap: 8px; }
-  .news-row > a, .sub-news-row > a { grid-column: 1; }
+  .sub-news-row { grid-template-columns: 1fr; gap: 8px; }
+  .sub-news-row > a { grid-column: 1; }
   .service-grid, .service-detail-grid, .staff-grid, .about-feature-grid { grid-template-columns: 1fr; gap: 32px; }
   .service-detail-card--single, .about-feature-card:last-child { grid-column: auto; width: 100%; }
   .image-crop--greeting { max-height: 460px; }
