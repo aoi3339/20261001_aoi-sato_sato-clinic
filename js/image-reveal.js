@@ -1,6 +1,6 @@
 (() => {
   const images = [...document.querySelectorAll(
-    '.greeting-grid > img, .service-card > img, .service-detail-card > img, .about-banner'
+    '.greeting-grid > img, .service-card > img, .service-detail-card > img, .about-banner, .contact-box'
   )];
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (!images.length || motion.matches || !('IntersectionObserver' in window)) return;
