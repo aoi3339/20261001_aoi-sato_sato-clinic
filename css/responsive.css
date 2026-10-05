@@ -21,7 +21,6 @@ main *, .header-inner > * { min-width: 0; }
 .image-crop--service { height: auto; aspect-ratio: 506 / 407; }
 .image-crop--detail { height: auto; aspect-ratio: 597 / 480; }
 .director-profile img { width: 100%; height: auto; aspect-ratio: 1; }
-.map-image { max-width: 100%; height: auto; }
 .mobile-nav-links, .menu-toggle { display: none; }
 .menu-toggle[hidden] { display: none !important; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-offset: 4px; }
@@ -148,7 +147,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .staff-grid { width: 100%; gap: 32px 24px; }
   .staff-card img, .office-profile img { width: min(100%, 220px); height: auto; aspect-ratio: 1; margin-bottom: 20px; }
   .office-profile { width: min(100%, 520px); margin-top: 40px; }
-  .map-image { width: 100%; height: auto; border-radius: 24px; }
+  .map-embed { border-radius: 24px; }
   .address { margin-top: 24px; font-size: 18px; line-height: 1.7; }
   .contact-box { width: 100%; padding: 28px 24px; border-radius: 24px; color: var(--text); }
   .contact-box h2 { font-size: 28px; color: var(--accent); }

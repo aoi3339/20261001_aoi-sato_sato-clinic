@@ -627,12 +627,31 @@ img {
   text-align: center;
 }
 
-.map-image {
-  width: 688.5px;
-  height: 578.7px;
+.map-reference {
+  width: 100%;
+  align-self: start;
+}
+
+.map-reference--home {
+  width: min(100%, 688.5px);
   margin: 0 auto;
-  object-fit: cover;
-  border-radius: 37.8px;
+}
+
+.map-embed {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 688.5 / 578.7;
+  min-height: 240px;
+  border: 0;
+  border-radius: 25.2px;
+}
+
+.map-note {
+  margin: 16px 0 0;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: left;
 }
 
 .address {
