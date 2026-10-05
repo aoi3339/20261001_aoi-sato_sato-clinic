@@ -62,7 +62,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 26px 0 18px;
+  padding: 24.5px 0 16.5px;
   background: var(--frame-bg);
   overflow: visible;
 }
