@@ -915,6 +915,41 @@ img {
   font-weight: 600;
 }
 
+.page-top-float {
+  position: fixed;
+  right: 57.6px;
+  bottom: calc(130px + env(safe-area-inset-bottom, 0px));
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--accent);
+  box-shadow: 0 3px 8px rgba(36, 92, 104, .12);
+  transition: background-color .2s, color .2s;
+}
+
+.page-top-float:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.page-top-float:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 4px;
+}
+
+.menu-open .page-top-float {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-top-float { transition: none; }
+}
+
 .faq-float {
   position: fixed;
   right: 57.6px;
