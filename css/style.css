@@ -769,10 +769,21 @@ img {
 }
 
 /* Subpage hero titles share a size and shadow; news titles have no shadow. */
-.page-services .sub-hero { position: relative; }
-.page-services .sub-hero img {
+.page-services .sub-hero {
+  position: relative;
   height: 328.5px;
+  overflow: hidden;
+  border-radius: 43.2px;
+}
+.page-services .sub-hero img {
+  position: absolute;
+  inset: -21.6px;
+  width: calc(100% + 43.2px);
+  max-width: none;
+  height: calc(100% + 43.2px);
   object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
 }
 .services-hero-title {
   position: absolute;
