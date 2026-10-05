@@ -1575,3 +1575,23 @@ img {
   border-radius: 0;
   box-shadow: none;
 }
+
+/* 元の所在地TOP画像に合わせて、タイトルの位置と比率を維持する。 */
+.location-hero {
+  position: relative;
+  container-type: inline-size;
+}
+.location-hero-title {
+  position: absolute;
+  z-index: 1;
+  top: 49%;
+  left: 34%;
+  margin: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 6cqw;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-shadow: var(--text-shadow-soft);
+}
