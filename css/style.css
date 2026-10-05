@@ -1576,18 +1576,21 @@ img {
   box-shadow: none;
 }
 
-/* 元の所在地TOP画像に合わせて、タイトルの位置と比率を維持する。 */
+/* 所在地TOP画像のタイトルを中央に揃え、背景を少し暗くする。 */
 .location-hero {
   position: relative;
   container-type: inline-size;
 }
+.location-hero img {
+  filter: brightness(0.9);
+}
 .location-hero-title {
   position: absolute;
   z-index: 1;
-  top: 49%;
-  left: 34%;
+  top: 50%;
+  left: 50%;
   margin: 0;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 6cqw;
   font-weight: 700;
