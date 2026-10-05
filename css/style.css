@@ -885,7 +885,7 @@ img {
 .faq-float {
   position: fixed;
   right: 64px;
-  bottom: 64px;
+  bottom: 44px;
   z-index: 10;
   display: flex;
   align-items: center;
