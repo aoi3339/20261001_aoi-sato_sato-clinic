@@ -43,7 +43,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .sub-news-row time { padding-left: 12px; }
   .sub-news-row h2 { font-size: clamp(18px, 2.2vw, 24.3px); }
   .hero-slide--courtyard .hero-slide-caption { font-size: clamp(28px, 5.2vw, 58.5px); }
-  .hero-slide--waiting .hero-slide-caption { font-size: clamp(20px, 4.2vw, 47.7px); top: 15%; left: 4%; right: 4%; }
+  .hero-slide--waiting .hero-slide-caption { font-size: calc(clamp(20px, 4.2vw, 47.7px) + 3px); top: 15%; left: 4%; right: 4%; }
   .hero-slide--digestive .hero-slide-caption { font-size: clamp(26px, 4.6vw, 52.2px); top: 15%; right: 4%; }
   .hero-slide--family .hero-slide-caption { font-size: clamp(26px, 4.8vw, 54px); left: 8%; bottom: 8%; }
   .about-banner-title { font-size: clamp(30px, 4vw, 43.2px); }
@@ -105,7 +105,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .menu-open .faq-float { display: none; }
   .hero-slideshow { border-radius: 24px; }
   .hero-slide--courtyard .hero-slide-caption { left: 5%; right: 5%; font-size: clamp(24px, 4.8vw, 36px); }
-  .hero-slide--waiting .hero-slide-caption { top: 15%; font-size: clamp(15px, 3.6vw, 27px); white-space: normal; text-wrap: balance; }
+  .hero-slide--waiting .hero-slide-caption { top: 15%; font-size: calc(clamp(15px, 3.6vw, 27px) + 3px); white-space: normal; text-wrap: balance; }
   .hero-slide--digestive .hero-slide-caption { font-size: clamp(22px, 4.3vw, 32px); }
   .hero-slide--family .hero-slide-caption { font-size: clamp(24px, 4.8vw, 36px); }
   .hero-slideshow-toggle { right: 12px; bottom: 12px; padding: 8px 12px; font-size: 12px; }
@@ -234,7 +234,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--text); outline-
   .menu-toggle { width: 48px; min-height: 48px; }
   .mobile-nav-links a { min-height: 64px; font-size: 26px; padding: 14px 4px; }
   .hero-slideshow { aspect-ratio: 1.65; border-radius: 20px; }
-  .hero-slide--waiting .hero-slide-caption { font-size: clamp(14px, 4vw, 19px); }
+  .hero-slide--waiting .hero-slide-caption { font-size: calc(clamp(14px, 4vw, 19px) + 3px); }
   .hero-slide--digestive .hero-slide-caption { font-size: clamp(18px, 4.8vw, 23px); }
   .hero-slide--courtyard .hero-slide-caption, .hero-slide--family .hero-slide-caption { font-size: clamp(22px, 6vw, 28px); }
   .hero-slideshow .hero-slide--digestive img { inset: -3%; width: 106%; height: 106%; }
