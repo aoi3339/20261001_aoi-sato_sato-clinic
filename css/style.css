@@ -307,7 +307,7 @@ img {
   color: #fff;
   background: var(--accent);
   border-radius: 60px;
-  box-shadow: 0 6px 0 var(--shadow-strong);
+  box-shadow: 0 5px 8px rgba(43, 57, 64, .32);
   font-size: 31px;
   line-height: 1;
   font-weight: 700;
