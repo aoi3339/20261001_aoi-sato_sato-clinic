@@ -118,7 +118,7 @@ img {
 }
 
 .hero {
-  padding-top: 15px;
+  padding-top: 0;
 }
 
 .hero img {
@@ -737,7 +737,7 @@ img {
 }
 
 .subpage-main {
-  padding-top: 15px;
+  padding-top: 0;
 }
 
 .sub-hero img {
