@@ -191,6 +191,15 @@ img {
   transform: translateY(0);
 }
 
+.hero-slide--waiting .hero-slide-caption {
+  top: 120px;
+  right: 48px;
+  bottom: auto;
+  left: 48px;
+  font-size: 53px;
+  text-align: center;
+  white-space: nowrap;
+}
 .hero-slide--digestive .hero-slide-caption {
   top: 120px;
   right: 48px;
@@ -202,10 +211,12 @@ img {
 }
 
 .hero-slide--courtyard .hero-slide-caption {
-  top: 52%;
+  top: 50%;
   right: 48px;
   bottom: auto;
   left: 48px;
+  translate: 0 -50%;
+  font-size: 65px;
   text-align: center;
 }
 
